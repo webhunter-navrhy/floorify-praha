@@ -1,0 +1,27 @@
+{% extends "_base.html" %}
+{% set titulek = 'Hybridní podlahy Barlinek Smart Wood Praha – dřevo odolné vodě | ' ~ site.nazev %}
+{% set popis = 'Hybridní podlahy Barlinek Smart Wood v Praze: pravá dřevěná nášlapná vrstva a konstrukce odolná vlhkosti. Druhá volba vedle vinylu.' %}
+{% set cesta = 'barlinek-smart-wood/' %}
+{% block obsah %}
+<section class="hlavicka-str"><div class="wrap">
+  <p class="stitek">Druhá volba vedle vinylu</p>
+  <h1>Hybridní podlahy Barlinek Smart Wood</h1>
+  <p>Pravá dřevěná nášlapná vrstva a konstrukce, která lépe snáší vlhkost. Pro ty, kdo chtějí dřevo, ale nechtějí řešit jeho slabiny.</p>
+</div></section>
+<section class="sekce" style="padding-top:0"><div class="wrap dva">
+  <div class="foto">{{ img('interier-svetly.jpg', 'Světlý interiér s dřevěnou podlahou', sizes='(min-width: 52rem) 40vw, 100vw') }}</div>
+  <div class="clanek">
+    <h2 style="margin-top:0">Co to je</h2>
+    <p>Smart Wood od značky Barlinek je hybridní podlaha s pravou dřevěnou nášlapnou vrstvou, doplněná konstrukcí odolnou vůči vlhkosti. Na pohled i dotek je to dřevo, chová se ale praktičtěji než klasická dřevěná podlaha.</p>
+    <h2>Proč ji zvolit</h2>
+    <ul>
+      <li>Pravý dřevěný povrch s přirozenou kresbou a příjemným došlapem.</li>
+      <li>Vyšší odolnost vůči vlhkosti, takže se hodí do chodeb, kuchyní i obývacích prostor.</li>
+      <li>Stabilní konstrukce, vhodná i pro podlahové vytápění (ověříme u konkrétního dekoru).</li>
+    </ul>
+    <h2>Vinyl, nebo Smart Wood?</h2>
+    <p>Vinyl vyhrává jednoduchostí a odolností, Smart Wood skutečným dřevem. Které řešení se do vašeho prostoru hodí, poradíme podle vzorků.</p>
+    <a class="odkaz" href="{{ url('kontakt/') }}">Poptat Smart Wood</a>
+  </div>
+</div></section>
+{% endblock %}

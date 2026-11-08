@@ -4,7 +4,7 @@
   "url": "https://webhunter-navrhy.github.io/floorify-praha/",
   "base": "/floorify-praha/",
   "lang": "cs",
-  "popis": "Vinylové podlahy Praha: výběr, dodání a pokládka rigidního i lepeného vinylu. Podlahy Šťastný, Praha 2 – Vinohrady.",
+  "popis": "Vinylové podlahy Praha: výběr, dodání a pokládka rigidního i lepeného vinylu a hybridních podlah Barlinek. Podlahy Šťastný, Praha 2 – Vinohrady.",
   "navrh": true,
   "domena": "",
   "og_image": "interier-svetly.jpg",
@@ -40,6 +40,10 @@
     {
       "text": "Lepený vinyl",
       "href": "lepeny-vinyl/"
+    },
+    {
+      "text": "Barlinek Smart Wood",
+      "href": "barlinek-smart-wood/"
     },
     {
       "text": "Pokládka v Praze",
