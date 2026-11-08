@@ -158,3 +158,10 @@ details p { margin-top: var(--space-1); max-width: 40rem; color: var(--muted); }
 .osa { padding-left: calc(var(--space-3) + 12px); }
 .osa li::before { left: calc(-1 * var(--space-3) - 12px - 7px); }
 @media (max-width: 40rem) { .hlavicka .wrap { flex-wrap: nowrap; } .nav-vedlejsi { display: none !important; } .hlavicka nav a:last-child { margin-left: 0; } }
+
+.menu-mobil { display: none; position: relative; }
+.menu-mobil summary { list-style: none; cursor: pointer; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; border: 1px solid var(--line); border-radius: 4px; }
+.menu-mobil summary::-webkit-details-marker { display: none; }
+.menu-mobil div { position: absolute; right: 0; top: 100%; z-index: 60; background: var(--pap); border: 1px solid var(--line); min-width: 14rem; padding: .5rem 1rem; display: flex; flex-direction: column; }
+.menu-mobil div a { display: flex; align-items: center; min-height: 44px; text-decoration: none; }
+@media (max-width: 40rem) { .menu-mobil { display: block; } .hlavicka .wrap { gap: .5rem; } .hlavicka nav { margin-left: auto; } }

@@ -28,6 +28,9 @@
     <nav aria-label="Hlavní">
       {% for n in site.nav %}<a{% if not loop.last %} class="nav-vedlejsi"{% endif %} href="{{ n.href if n.href.startswith(('#', 'http', 'tel:', 'mailto:')) else url(n.href) }}">{{ n.text }}</a> {% endfor %}
     </nav>
+    <details class="menu-mobil"><summary aria-label="Menu">☰</summary>
+      <div>{% for n in site.nav %}{% if not loop.last %}<a href="{{ url(n.href) }}">{{ n.text }}</a>{% endif %}{% endfor %}</div>
+    </details>
   </div>
 </header>
 <main id="obsah">

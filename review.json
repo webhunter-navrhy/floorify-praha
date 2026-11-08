@@ -1,17 +1,17 @@
 {
   "znamka": 8,
   "slabiny": [
-    "Sekce „Dva druhy vinylu“, karta Lepený vinyl (PC i 390 px): popisek „Tenká vinylová vrstva“ je bílé písmo na světle béžovém pruhu a skoro se nedá přečíst. Oprava: na světlých vrstvách dát tmavý text #3a2f24, nebo vrstvy ztmavit, aby kontrast byl aspoň 4,5:1. Pruhy navíc doplnit tenkou perokresbou řezu (obrys, šrafura jádra, zub click spoje, vrstva lepidla na podkladu), aby to byl technický řez a ne jen barevné obdélníky.",
-    "Hlavička na mobilu (390 a 360 px): už není sticky, ale pořád má 2 řádky (název a pod ním menu) a chybí v ní Kontakt i tlačítko Poptávka, protože tlačítko Kontakt z PC na mobilu zmizelo. Oprava: jeden řádek s názvem „Podlahy Šťastný“ vlevo a vpravo s tlačítkem „Poptávka“ a hamburgerem, ve kterém budou Rigidní vinyl, Lepený vinyl, Pokládka v Praze a Kontakt.",
-    "Sekce „Jak to probíhá“ (PC i mobil): použitá fotka obýváku s ratanovým křeslem je stejná jako v kartě Rigidní vinyl, takže se během jednoho scrollu opakuje. Text kroků navíc leží přímo na svislé čáře časové osy bez odsazení. Oprava: dát sem jinou katalogovou fotku (třeba detail podlahy nebo jiný interiér z podkladů) a text kroků odsadit od osy asi o 16–20 px."
+    "Sekce „Jak to probíhá“ (PC i 390 px): text kroků („Napíšete nám“, „Vybereme druh a dekor“ atd.) pořád leží přímo na svislé čáře časové osy. Na PC se tečky kroků dotýkají prvního písmene, na mobilu začíná text v jednom pixelu s čárou. Oprava: odsadit text od osy o 16–20 px (padding-left na položce, tečku vycentrovat na čáru). Fotka sekce je už jiná, to je v pořádku.",
+    "Hlavička na mobilu (390 a 360 px): má už jeden řádek s názvem a tlačítkem Kontakt, ale nemá hamburger. Na podstránky Rigidní vinyl, Lepený vinyl a Pokládka v Praze se z hlavičky na mobilu nedá dostat. Oprava: vpravo vedle tlačítka (nejlépe přejmenovaného na „Poptávka“) přidat hamburger aspoň 40 × 40 px. V něm budou Rigidní vinyl, Lepený vinyl, Pokládka v Praze a Kontakt.",
+    "Sekce „Dva druhy vinylu“, skladby vrstev v kartách (PC i mobil): kontrast je opravený a tmavý text na světlých vrstvách se dá číst. Pruhy jsou ale pořád jen ploché barevné obdélníky. Oprava: doplnit tenkou perokresbu řezu podle minulé výtky (obrys, šrafura pevného jádra, zub click spoje u rigidního, tečkovaná vrstva lepidla na podkladu u lepeného). Pak je to technický řez, který nese koncept webu."
   ],
   "zavazne": [],
   "silne": [
-    "Hero na PC je opravený: fotka toffee jde přes celou šířku a karta s nadpisem a dvěma CTA na ní leží, takže první dojem dělá obraz, ne béžová plocha.",
-    "Řez skladbou podlahy z briefu je teď na webu vidět jako vrstvy u obou druhů vinylu, takže web má vlastní nápad z oboru.",
-    "„Jak to probíhá“ je světlá sekce s časovou osou a fotkou, bez číslování 01–04 a bez tmavého pruhu. Zakázané vzory zmizely.",
-    "Paleta (papír, dub, cihlový akcent) a písma Newsreader + Hanken Grotesk sedí k briefu. Háčky jsou v pořádku, QA neukazuje žádné přetečení na 6 šířkách a texty jsou věcné, bez vymyšlených čísel."
+    "Kontrast popisků vrstev u Lepeného vinylu je opravený. Tmavý text na světle béžových pruzích je čitelný na PC i na mobilu.",
+    "Sekce „Jak to probíhá“ má novou fotku (pokoj s terazzo podlahou), takže se během scrollu nic neopakuje. Fotky celého webu jsou katalogové interiéry s podlahami, ostré a v jedné teplé gradaci.",
+    "Světlý editorial s jedním cihlovým akcentem a Newsreader + Hanken Grotesk se správnými háčky. Hero je jasný: co firma dělá, kde a dvě CTA vlevo.",
+    "QA je čisté: žádné přetečení na 6 šířkách, malý přenos dat (0,86 MB na PC) a v pořádku noindex, cache busting a SEO."
   ],
-  "verdikt": "Všechny tři výtky z minulého kola jsou opravené, mobilní hlavička jen zčásti (už nezabírá každou obrazovku, ale pořád nemá jeden řádek a kontakt). Závažná vada tam není, web se dá odeslat, jen je dobré opravit kontrast popisků ve vrstvách a mobilní hlavičku.",
-  "_hash": "50234988d99267110090f37538f11244cb107662"
+  "verdikt": "Dvě ze tří minulých výtek jsou opravené jen napůl: čitelnost vrstev ano, perokresba ne; mobilní hlavička má jeden řádek a kontakt, ale nemá hamburger. Odsazení textu od osy v „Jak to probíhá“ opravené není. Nová závažná vada se neobjevila, takže známka zůstává 8 a web jde poslat, ty tři úpravy ale stojí za dodělání.",
+  "_hash": "09ceea2b22e6693c182fcb32c340c00400ab621f"
 }
