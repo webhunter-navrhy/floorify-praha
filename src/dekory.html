@@ -1,0 +1,32 @@
+{% extends "_base.html" %}
+{% set titulek = 'Dekory vinylových podlah Floorify a Barlinek | ' ~ site.nazev %}
+{% set popis = 'Přehled dekorů vinylových podlah Floorify (rigidní i lepené) a Barlinek podle řad, formátu a vzhledu. Podlahy Šťastný, Praha 2.' %}
+{% set cesta = 'dekory/' %}
+{% block obsah %}
+<section class="hlavicka-str"><div class="wrap">
+  <p class="stitek">Dekory</p>
+  <h1>Dekory podlah podle značky a řady</h1>
+  <p>Přehled řad Floorify a Barlinek s dekory a tím, k čemu se která hodí. Vzorky a skutečný odstín vám ukážeme v showroomu na Vinohradech.</p>
+</div></section>
+{% for skupina in data.dekory %}
+<section class="sekce" style="padding-top:0"><div class="wrap">
+  <h2>{{ skupina[0] }}</h2>
+  {% for rada in skupina[1] %}
+  <div class="clanek" style="margin-bottom:1.8rem">
+    <h3>{{ rada[0] }} <small>· {{ rada[1] }}</small></h3>
+    <p>{{ rada[2] }}</p>
+    <p><b>Dekory:</b> {{ rada[3]|join(' · ') }}</p>
+  </div>
+  {% endfor %}
+</div></section>
+{% endfor %}
+<section class="sekce" style="padding-top:0"><div class="wrap">
+  <h2>Společné výhody rigidního a lepeného vinylu Floorify</h2>
+  <ul>
+    <li>Nášlapná vrstva 0,55 mm, zátěžová třída 33.</li>
+    <li>Rigidní řady: pevné jádro, click zámek, plovoucí pokládka bez lepení, vodovzdorné.</li>
+    <li>Lepené řady: tenčí (2,5 mm), celoplošně lepené, stabilní i na větších plochách.</li>
+  </ul>
+  <p>Nevíte, který dekor se k prostoru hodí? <a class="odkaz" href="{{ url('kontakt/') }}">Napište nám</a>.</p>
+</div></section>
+{% endblock %}

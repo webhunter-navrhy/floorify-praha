@@ -34,6 +34,10 @@
   },
   "nav": [
     {
+      "text": "Dekory",
+      "href": "dekory/"
+    },
+    {
       "text": "Rigidní vinyl",
       "href": "rigidni-vinyl/"
     },
