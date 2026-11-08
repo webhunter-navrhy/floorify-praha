@@ -19,6 +19,10 @@
     <div class="vzorky">
       {% for d in rada[3] %}<figure>{{ img('dekory/' ~ d.lower().replace(' ', '-') ~ '.jpg', 'Dekor ' ~ d ~ ', Barlinek Next Step', sizes='(max-width:600px) 45vw, 180px') }}<figcaption>{{ d }}</figcaption></figure>{% endfor %}
     </div>
+    {% elif skupina[0].startswith('Floorify') %}
+    <div class="vzorky">
+      {% for d in rada[3] %}{% set ns = namespace(kod='') %}{% for t in d.split() %}{% if t[0] == 'F' and t[-1] in '0123456789' %}{% set ns.kod = t %}{% endif %}{% endfor %}<figure>{{ img('dekory/floorify-' ~ ns.kod.lower() ~ '.jpg', 'Dekor ' ~ d ~ ', Floorify ' ~ rada[0], sizes='(max-width:600px) 45vw, 180px') }}<figcaption>{{ d }}</figcaption></figure>{% endfor %}
+    </div>
     {% else %}
     {% set foto = {'Long Planks':'dlouhe-prkna.jpg','XL Planks':'toffee.jpg','Herringbone':'rybi-kost.jpg','Big Tiles':'velke-dilce.jpg'}.get(rada[0]) %}
     {% if foto %}<div class="rada-foto">{{ img(foto, 'Ukázka řady ' ~ rada[0] ~ ' v interiéru', sizes='(max-width:700px) 90vw, 560px') }}</div>{% endif %}
