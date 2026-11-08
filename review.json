@@ -1,0 +1,16 @@
+{
+  "znamka": 6,
+  "slabiny": [
+    "Hero na PC (1440): fotka je malá (asi 240×300 px) v rámečku vpravo a kolem ní je velká prázdná béžová plocha. Je to přesně vzor „béžový editorial bez silného obrazu“, kvůli kterému Rafael zamítl Rezidenci Metelka. Oprava: fotku toffee dát přes celou šířku nebo aspoň na 55–60 % šířky až k okraji, nadpis a CTA položit vedle ní nebo přes ni. Do hlavičky přidat tlačítko „Poptávka“ a menu zvětšit z asi 11 px na 15 px.",
+    "Sekce „Dva druhy vinylu, dvě různé skladby“: nápad z briefu (řez skladbou podlahy) na webu vůbec není. Jsou tam jen 2 obyčejné karty s fotkou a odstavcem, takže web působí jako šablona. Oprava: ke každé kartě přidat čistou perokresbu řezu s vrstvami (rigidní: nášlapná vrstva, dekor, pevné jádro, click spoj, podložka; lepený: vrstvy a lepidlo na podkladu), bez čísel, která brief nedokládá. Stejný motiv řezu pak zopakovat jako linku nebo oddělovač na podstránkách.",
+    "Mobil (390 a 360 px): hlavička je sticky a menu bez hamburgeru se zalamuje do 2 řádků, takže na každé obrazovce zabírá asi 115 px a název „Podlahy Šťastný“ se lepí na horní okraj. Oprava: jednořádková hlavička (název a hamburger nebo tlačítko „Poptávka“) s horním paddingem aspoň 12 px. Dál sekce „Jak to probíhá“: tmavý hnědý pruh s čísly 01–04 jsou dva zakázané vzory. Předělat ji na světlou sekci bez číslování, kroky jako krátká časová osa nebo s fotkou pokládky."
+  ],
+  "zavazne": [],
+  "silne": [
+    "Paleta z briefu (papír, dub, cihlový akcent) a dvojice Newsreader + Hanken Grotesk jsou klidné a čitelné a háčky (Šťastný, dvě různé) se kreslí správně.",
+    "Texty jsou věcné a nic si nevymýšlejí: žádná čísla, recenze ani reference. Fotky sedí k oboru, jsou ostré a dobře ladí s paletou.",
+    "QA je čisté na všech 6 šířkách (žádné přetékání, žádné malé dotykové cíle), 0,5 MB na PC, struktura podstránek je dobrá pro SEO (rigidní, lepený, pokládka Praha, kontakt)."
+  ],
+  "verdikt": "Korektní a pravdivý, ale bezpečný béžový editorial. Hero je slabý, nápad s řezem skladbou na webu chybí a sekce „Jak to probíhá“ používá tmavý číslovaný pruh. Vrátit k opravě hera, sekce s druhy vinylu a mobilní hlavičky, v tomto stavu neodesílat.",
+  "_hash": "3944de6348cf41399e73ae5662d1f88bfc2f98ce"
+}
