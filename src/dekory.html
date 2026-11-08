@@ -15,7 +15,15 @@
   <div class="clanek" style="margin-bottom:1.8rem">
     <h3>{{ rada[0] }} <small>· {{ rada[1] }}</small></h3>
     <p>{{ rada[2] }}</p>
+    {% if rada[0].startswith('Next Step') %}
+    <div class="vzorky">
+      {% for d in rada[3] %}<figure>{{ img('dekory/' ~ d.lower().replace(' ', '-') ~ '.jpg', 'Dekor ' ~ d ~ ', Barlinek Next Step', sizes='(max-width:600px) 45vw, 180px') }}<figcaption>{{ d }}</figcaption></figure>{% endfor %}
+    </div>
+    {% else %}
+    {% set foto = {'Long Planks':'dlouhe-prkna.jpg','XL Planks':'toffee.jpg','Herringbone':'rybi-kost.jpg','Big Tiles':'velke-dilce.jpg'}.get(rada[0]) %}
+    {% if foto %}<div class="rada-foto">{{ img(foto, 'Ukázka řady ' ~ rada[0] ~ ' v interiéru', sizes='(max-width:700px) 90vw, 560px') }}</div>{% endif %}
     <p><b>Dekory:</b> {{ rada[3]|join(' · ') }}</p>
+    {% endif %}
   </div>
   {% endfor %}
 </div></section>
