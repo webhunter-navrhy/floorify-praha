@@ -1,0 +1,30 @@
+{% extends "_base.html" %}
+{% set titulek = 'Pokládka vinylové podlahy Praha – jak probíhá | ' ~ site.nazev %}
+{% set popis = 'Pokládka vinylových podlah v Praze: příprava podkladu, rigidní i lepený vinyl, postup a odpovědi na časté otázky.' %}
+{% set cesta = 'pokladka-vinylu-praha/' %}
+{% set faq = [
+ ('Musí být podklad úplně rovný?', 'U rigidního vinylu jsou drobné nerovnosti menší problém, u lepeného musí být podklad rovný a čistý. Před pokládkou ho proto zkontrolujeme a řekneme, co je potřeba upravit.'),
+ ('Jak dlouho pokládka trvá?', 'Záleží na ploše, druhu vinylu a stavu podkladu. Přesnější odhad dostanete s nabídkou po zaměření.'),
+ ('Můžu vinyl dát na stávající podlahu?', 'Někdy ano, někdy ne. Rozhodne stav a druh stávající podlahy. Napište nám, co tam teď máte, a řekneme vám, jak postupovat.'),
+ ('Hodí se vinyl na podlahové topení?', 'Řada vinylových podlah se na topení pokládat dá, ale u každého výrobku se to liší. Před objednávkou si to ověříme.'),
+ ('Dodáváte i podlahu, nebo jen pokládku?', 'Pomůžeme s výběrem, dodáním i pokládkou. Co všechno potřebujete, stačí napsat do poptávky.')
+] %}
+{% set jsonld %}{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{% for q,a in faq %}{"@type":"Question","name":{{ q|tojson }},"acceptedAnswer":{"@type":"Answer","text":{{ a|tojson }}}}{{ ',' if not loop.last }}{% endfor %}]}{% endset %}
+{% block obsah %}
+<section class="hlavicka-str"><div class="wrap">
+  <p class="stitek">Vinylové podlahy Praha</p>
+  <h1>Pokládka vinylu v Praze</h1>
+  <p>Od kontroly podkladu po hotovou podlahu. Tady je, jak pokládka vypadá a na co se lidé ptají nejčastěji.</p>
+</div></section>
+<section class="foto-siroka"><div class="wrap">{{ img('interier-svetly.jpg', 'Světlý pražský byt s vinylovou podlahou, vysoká okna a zrcadlo nad krbem', sizes='72rem') }}</div></section>
+<section class="sekce"><div class="wrap clanek">
+  <h2 style="margin-top:0">Co se děje před pokládkou</h2>
+  <p>Nejdřív se podíváme na podklad. Měříme rovinu, zjišťujeme vlhkost a stav stávající podlahy. Dobrá pokládka stojí na dobrém podkladu, a proto tu nic neodbýváme.</p>
+  <h2>Rigidní a lepený vinyl při pokládce</h2>
+  <p>Rigidní vinyl se skládá na click a leží na podložce. Lepený vinyl se celoplošně lepí k podkladu, takže potřebuje pečlivější přípravu. Který z nich zvolit, poradíme podle prostoru.</p>
+  <p><a class="odkaz" style="margin:0" href="{{ url('rigidni-vinyl/') }}">Rigidní vinyl</a> · <a class="odkaz" style="margin:0" href="{{ url('lepeny-vinyl/') }}">Lepený vinyl</a></p>
+  <h2>Časté otázky</h2>
+  {% for q,a in faq %}<details><summary>{{ q }}</summary><p>{{ a }}</p></details>{% endfor %}
+  <a class="tlacitko" style="margin-top:var(--space-4)" href="{{ url('kontakt/') }}">Poptat pokládku</a>
+</div></section>
+{% endblock %}

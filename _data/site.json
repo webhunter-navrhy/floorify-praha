@@ -1,0 +1,53 @@
+{
+  "slug": "floorify-praha",
+  "nazev": "Podlahy Šťastný",
+  "url": "https://webhunter-navrhy.github.io/floorify-praha/",
+  "base": "/floorify-praha/",
+  "lang": "cs",
+  "popis": "Vinylové podlahy Praha: výběr, dodání a pokládka rigidního i lepeného vinylu. Podlahy Šťastný, Praha 2 – Vinohrady.",
+  "navrh": true,
+  "domena": "",
+  "og_image": "interier-svetly.jpg",
+  "logo": "",
+  "theme_color": "#f4efe6",
+  "typ": "LocalBusiness",
+  "ico": "74119893",
+  "kontakt": {
+    "email": "info@podlahystastny.cz",
+    "telefon": "",
+    "adresa": {
+      "ulice": "Slavíkova 29",
+      "psc": "120 00",
+      "mesto": "Praha 2 – Vinohrady",
+      "zeme": "CZ"
+    }
+  },
+  "oteviraci_doba": [
+    "Po–Čt 9:00–17:00"
+  ],
+  "sameas": [],
+  "cenove_rozpeti": "",
+  "formular": {
+    "endpoint": "",
+    "demo": true,
+    "predmet": "Poptávka vinylové podlahy z webu"
+  },
+  "nav": [
+    {
+      "text": "Rigidní vinyl",
+      "href": "rigidni-vinyl/"
+    },
+    {
+      "text": "Lepený vinyl",
+      "href": "lepeny-vinyl/"
+    },
+    {
+      "text": "Pokládka v Praze",
+      "href": "pokladka-vinylu-praha/"
+    },
+    {
+      "text": "Kontakt",
+      "href": "kontakt/"
+    }
+  ]
+}

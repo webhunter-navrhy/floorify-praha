@@ -1,0 +1,57 @@
+{% extends "_base.html" %}
+{% set titulek = 'Vinylové podlahy Praha – výběr a pokládka | ' ~ site.nazev %}
+{% set cesta = '' %}
+{% block obsah %}
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="stitek">Vinylové podlahy Praha</p>
+      <h1>Vinylová podlaha, která vydrží a dobře vypadá</h1>
+      <p class="uvod">Pomůžeme vám vybrat správný druh vinylu, dodáme ho a položíme v Praze a okolí. Od jedné místnosti po celý byt.</p>
+      <div class="cta"><a class="tlacitko" href="{{ url('kontakt/') }}">Nezávazná poptávka</a><a class="tlacitko druhe" href="#druhy">Rigidní, nebo lepený?</a></div>
+    </div>
+    <div class="foto">{{ img('toffee.jpg', 'Světlá dubová vinylová podlaha v otevřeném interiéru se schodištěm', sizes='(min-width: 52rem) 40vw, 100vw') }}</div>
+  </div>
+</section>
+
+<section class="sekce" id="druhy">
+  <div class="wrap">
+    <p class="stitek">Z čeho se podlaha skládá</p>
+    <h2>Dva druhy vinylu, dvě různé skladby</h2>
+    <p style="max-width:40rem;margin-block:var(--space-2) var(--space-4);color:var(--muted)">Na povrchu vypadají podobně. Rozdíl je pod ním: jak se podlaha drží podkladu a co snese. Právě podle toho se vybírá.</p>
+    <div class="rozcesti">
+      <article>{{ img('dlouhe-prkna.jpg', 'Vinylová podlaha ve světlém dubovém dekoru v obývacím pokoji s ratanovým nábytkem', sizes='(min-width: 52rem) 36rem, 100vw') }}
+        <div><h3>Rigidní vinyl</h3><p>Pevné jádro a spoj na click. Pokládá se plovoucím způsobem, bez lepení, a hodí se i na menší nerovnosti podkladu.</p><a class="odkaz" href="{{ url('rigidni-vinyl/') }}">Víc o rigidním vinylu</a></div></article>
+      <article>{{ img('koupelna.jpg', 'Lepená vinylová podlaha v dekoru terrazza v ložnici s volně stojící vanou', sizes='(min-width: 52rem) 36rem, 100vw') }}
+        <div><h3>Lepený vinyl</h3><p>Tenká podlaha, která se celoplošně lepí k podkladu. Je tichá, příjemná na došlap a dá se použít i tam, kde je každý milimetr výšky důležitý.</p><a class="odkaz" href="{{ url('lepeny-vinyl/') }}">Víc o lepeném vinylu</a></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="sekce" style="padding-top:0">
+  <div class="wrap dva">
+    <div class="foto">{{ img('rybi-kost.jpg', 'Vinylová podlaha ve vzoru rybí kosti v teplém dubovém odstínu', sizes='(min-width: 52rem) 40vw, 100vw') }}</div>
+    <div>
+      <p class="stitek">Dekory</p>
+      <h2>Od klasického dubu po rybí kost</h2>
+      <p>Vinyl umí dřevo, kámen i terrazzo. Prkna, dílce nebo vzor rybí kosti, světlé i tmavé odstíny. Rozhodnout se snadněji podle vzorků a přímo v místnosti než podle obrázku na obrazovce.</p>
+      <p>Napište nám, co máte za prostor a jaký styl se vám líbí. Poradíme, co se do něj hodí.</p>
+      <a class="odkaz" href="{{ url('kontakt/') }}">Napsat poptávku</a>
+    </div>
+  </div>
+</section>
+
+<section class="sekce pas">
+  <div class="wrap">
+    <p class="stitek" style="color:var(--dub)">Jak to probíhá</p>
+    <h2>Od poptávky k hotové podlaze</h2>
+    <ol class="kroky" role="list">
+      <li><b>Poptávka</b>Napíšete, o jaký prostor jde a co si představujete.</li>
+      <li><b>Výběr</b>Společně vybereme druh vinylu a dekor, který se k prostoru hodí.</li>
+      <li><b>Zaměření a cena</b>Prostor zaměříme a pošleme vám konkrétní nabídku.</li>
+      <li><b>Pokládka</b>Podklad připravíme a podlahu položíme.</li>
+    </ol>
+    <div class="cta"><a class="tlacitko" href="{{ url('pokladka-vinylu-praha/') }}" style="background:var(--dub);color:var(--tm)">Podrobně o pokládce</a></div>
+  </div>
+</section>
+{% endblock %}
