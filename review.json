@@ -1,16 +1,17 @@
 {
-  "znamka": 6,
+  "znamka": 8,
   "slabiny": [
-    "Hero na PC (1440): fotka je malá (asi 240×300 px) v rámečku vpravo a kolem ní je velká prázdná béžová plocha. Je to přesně vzor „béžový editorial bez silného obrazu“, kvůli kterému Rafael zamítl Rezidenci Metelka. Oprava: fotku toffee dát přes celou šířku nebo aspoň na 55–60 % šířky až k okraji, nadpis a CTA položit vedle ní nebo přes ni. Do hlavičky přidat tlačítko „Poptávka“ a menu zvětšit z asi 11 px na 15 px.",
-    "Sekce „Dva druhy vinylu, dvě různé skladby“: nápad z briefu (řez skladbou podlahy) na webu vůbec není. Jsou tam jen 2 obyčejné karty s fotkou a odstavcem, takže web působí jako šablona. Oprava: ke každé kartě přidat čistou perokresbu řezu s vrstvami (rigidní: nášlapná vrstva, dekor, pevné jádro, click spoj, podložka; lepený: vrstvy a lepidlo na podkladu), bez čísel, která brief nedokládá. Stejný motiv řezu pak zopakovat jako linku nebo oddělovač na podstránkách.",
-    "Mobil (390 a 360 px): hlavička je sticky a menu bez hamburgeru se zalamuje do 2 řádků, takže na každé obrazovce zabírá asi 115 px a název „Podlahy Šťastný“ se lepí na horní okraj. Oprava: jednořádková hlavička (název a hamburger nebo tlačítko „Poptávka“) s horním paddingem aspoň 12 px. Dál sekce „Jak to probíhá“: tmavý hnědý pruh s čísly 01–04 jsou dva zakázané vzory. Předělat ji na světlou sekci bez číslování, kroky jako krátká časová osa nebo s fotkou pokládky."
+    "Sekce „Dva druhy vinylu“, karta Lepený vinyl (PC i 390 px): popisek „Tenká vinylová vrstva“ je bílé písmo na světle béžovém pruhu a skoro se nedá přečíst. Oprava: na světlých vrstvách dát tmavý text #3a2f24, nebo vrstvy ztmavit, aby kontrast byl aspoň 4,5:1. Pruhy navíc doplnit tenkou perokresbou řezu (obrys, šrafura jádra, zub click spoje, vrstva lepidla na podkladu), aby to byl technický řez a ne jen barevné obdélníky.",
+    "Hlavička na mobilu (390 a 360 px): už není sticky, ale pořád má 2 řádky (název a pod ním menu) a chybí v ní Kontakt i tlačítko Poptávka, protože tlačítko Kontakt z PC na mobilu zmizelo. Oprava: jeden řádek s názvem „Podlahy Šťastný“ vlevo a vpravo s tlačítkem „Poptávka“ a hamburgerem, ve kterém budou Rigidní vinyl, Lepený vinyl, Pokládka v Praze a Kontakt.",
+    "Sekce „Jak to probíhá“ (PC i mobil): použitá fotka obýváku s ratanovým křeslem je stejná jako v kartě Rigidní vinyl, takže se během jednoho scrollu opakuje. Text kroků navíc leží přímo na svislé čáře časové osy bez odsazení. Oprava: dát sem jinou katalogovou fotku (třeba detail podlahy nebo jiný interiér z podkladů) a text kroků odsadit od osy asi o 16–20 px."
   ],
   "zavazne": [],
   "silne": [
-    "Paleta z briefu (papír, dub, cihlový akcent) a dvojice Newsreader + Hanken Grotesk jsou klidné a čitelné a háčky (Šťastný, dvě různé) se kreslí správně.",
-    "Texty jsou věcné a nic si nevymýšlejí: žádná čísla, recenze ani reference. Fotky sedí k oboru, jsou ostré a dobře ladí s paletou.",
-    "QA je čisté na všech 6 šířkách (žádné přetékání, žádné malé dotykové cíle), 0,5 MB na PC, struktura podstránek je dobrá pro SEO (rigidní, lepený, pokládka Praha, kontakt)."
+    "Hero na PC je opravený: fotka toffee jde přes celou šířku a karta s nadpisem a dvěma CTA na ní leží, takže první dojem dělá obraz, ne béžová plocha.",
+    "Řez skladbou podlahy z briefu je teď na webu vidět jako vrstvy u obou druhů vinylu, takže web má vlastní nápad z oboru.",
+    "„Jak to probíhá“ je světlá sekce s časovou osou a fotkou, bez číslování 01–04 a bez tmavého pruhu. Zakázané vzory zmizely.",
+    "Paleta (papír, dub, cihlový akcent) a písma Newsreader + Hanken Grotesk sedí k briefu. Háčky jsou v pořádku, QA neukazuje žádné přetečení na 6 šířkách a texty jsou věcné, bez vymyšlených čísel."
   ],
-  "verdikt": "Korektní a pravdivý, ale bezpečný béžový editorial. Hero je slabý, nápad s řezem skladbou na webu chybí a sekce „Jak to probíhá“ používá tmavý číslovaný pruh. Vrátit k opravě hera, sekce s druhy vinylu a mobilní hlavičky, v tomto stavu neodesílat.",
-  "_hash": "3944de6348cf41399e73ae5662d1f88bfc2f98ce"
+  "verdikt": "Všechny tři výtky z minulého kola jsou opravené, mobilní hlavička jen zčásti (už nezabírá každou obrazovku, ale pořád nemá jeden řádek a kontakt). Závažná vada tam není, web se dá odeslat, jen je dobré opravit kontrast popisků ve vrstvách a mobilní hlavičku.",
+  "_hash": "50234988d99267110090f37538f11244cb107662"
 }
